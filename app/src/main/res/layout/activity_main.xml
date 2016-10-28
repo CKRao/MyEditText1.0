@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:clark="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <com.clark.myedittext.MyEditTextView
+        android:id="@+id/id_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:inputType="phone"
+        clark:editHint="请输入手机号"
+        clark:leftText="手机号"
+        clark:leftTextSize="6sp"
+        clark:viewColor="@color/colorPrimaryDark"
+        />
+
+    <com.clark.myedittext.MyEditTextView
+        android:id="@+id/id_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/id_phone"
+        android:layout_centerInParent="true"
+        android:inputType="textPassword"
+        clark:editHint="请输入验证码"
+        clark:leftText="验证码"
+        clark:leftTextSize="6sp"
+        clark:viewColor="@color/colorPrimaryDark"/>
+
+</RelativeLayout>

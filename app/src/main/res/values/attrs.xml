@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyEsitText">
+        <attr name="leftText" format="string"/>
+        <attr name="leftTextSize" format="dimension"/>
+        <attr name="editHint" format="string"/>
+        <attr name="viewColor" format="color|reference"/>
+    </declare-styleable>
+</resources>

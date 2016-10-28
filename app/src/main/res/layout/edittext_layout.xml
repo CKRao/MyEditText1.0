@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_background">
+
+    <TextView
+        android:id="@+id/id_text1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:lines="1"
+        android:padding="1dp"
+        android:text="手机号"
+        android:textSize="11sp"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toRightOf="@id/id_text1"
+        android:background="#EEEFFF"/>
+
+    <EditText
+        android:background="@null"
+        android:id="@+id/id_et"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/view1"
+        android:ems="19"
+        android:hint="请输入手机号"
+        android:padding="1dp"
+        android:textSize="12sp">
+
+        <requestFocus/>
+    </EditText>
+    <ImageView
+        android:id="@+id/id_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/x"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
